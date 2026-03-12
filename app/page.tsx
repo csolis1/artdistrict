@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import { useState, useEffect } from 'react';
 
 const COLORS = {
@@ -137,9 +138,12 @@ export default function ArtDistrictLogo() {
               Everyone Speaks Art
             </p>
             <div className="pt-8">
-              <button className="px-8 py-3 border-2 border-slate-900 text-slate-900 bg-transparent rounded-lg font-medium hover:bg-slate-900 hover:text-white transition-colors duration-300 hover:scale-105 active:scale-95">
-                Explore Now
-              </button>
+              <Link 
+                href="/home"
+                 className="px-8 py-3 border-2 border-slate-900 text-slate-900 bg-transparent rounded-lg font-medium hover:bg-slate-900 hover:text-white transition-colors duration-300 hover:scale-105 active:scale-95 inline-block"
+                >
+                  Explore Now
+              </Link>
             </div>
           </div>
         </div>

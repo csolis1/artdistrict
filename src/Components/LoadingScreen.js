@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ArtDistrictLanding() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-white">
@@ -20,9 +22,12 @@ export default function ArtDistrictLanding() {
           
           {/* Optional CTA */}
           <div className="pt-8">
-            <button className="px-8 py-3 bg-slate-900 text-white rounded-full font-medium hover:bg-slate-800 transition-all hover:scale-105 active:scale-95">
-              Explore Now
-            </button>
+            <Link
+                href="/HomePage"
+                className="px-8 py-3 bg-slate-900 text-white rounded-full font-medium hover:bg-slate-800 transition-all hover:scale-105 active:scale-95 inline-block"
+              >
+                Explore Now
+            </Link>
           </div>
         </div>
       </div>
