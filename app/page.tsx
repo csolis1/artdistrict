@@ -124,7 +124,7 @@ export default function ArtDistrictLogo() {
         </div>
       </div>
 
-      <div className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center transition-opacity duration-1000 ${
+      <div className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center transition-opacity duration-1000 z-20 ${
         showText ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}>
         <div className="relative z-10 flex flex-col items-center justify-center px-6 md:px-12">
