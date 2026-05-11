@@ -1,4 +1,6 @@
+"use client";
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 /* ════════════════════════════════════════════════════════════
    SHARED STYLE TOKENS
@@ -68,14 +70,14 @@ const NAV_CATEGORIES = [
     { label: "Atlanta Events", hue: 5 }, { label: "New York Events", hue: 215 },
     { label: "Chicago Events", hue: 150 },
   ]},
-  { id: "about",   label: "About",   subs: null },
+  { id: "about",   label: "About", path: "/layout/about",  subs: null },
   { id: "contact", label: "Contact", subs: null },
 ];
 
 const CAROUSEL_ITEMS = [
-  { id: 1, href: "#", accent: "#5BB8D4", eyebrow: "Newsletter",           title: "Art Archives",
+  { id: 1, href: "/art-archives", accent: "#5BB8D4", eyebrow: "Newsletter",           title: "Art Archives",
     description: "A curated journey through art history — stories, movements, and masterworks delivered straight to your inbox.",
-    cta: "Subscribe Now",           src: "/images/artarchives.png" },
+    cta: "Enter the Archives",           src: "/images/artarchives.png" },
   { id: 2, href: "#", accent: "#a8c5da", eyebrow: "Monthly Feature",      title: "Artist Spotlight",
     description: "Every month we shine a light on one extraordinary artist — their process, their story, their vision.",
     cta: "Meet This Month's Artist", src: "https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?w=1200&q=85" },
